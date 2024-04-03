@@ -261,7 +261,7 @@ if select == "Modify":
       st.dataframe(df6)
 
       col1,col2,col3 = st.columns(3)
-      with col1:
+      with col2:
         st.success(" Successfully Modified", icon="✅")
 
 if select == "Delete":
