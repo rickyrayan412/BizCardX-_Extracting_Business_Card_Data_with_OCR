@@ -260,7 +260,9 @@ if select == "Modify":
 
       st.dataframe(df6)
 
-      st.success(" Successfully Modified", icon="✅")
+      col1,col2,col3 = st.columns(3)
+      with col1:
+        st.success(" Successfully Modified", icon="✅")
 
 if select == "Delete":
   st.markdown('<h2 style="text-align: center; color: #FF7F50;">Delete the data from the Database.</h2>', unsafe_allow_html=True)
